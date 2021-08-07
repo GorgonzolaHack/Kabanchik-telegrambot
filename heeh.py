@@ -21,12 +21,12 @@ def start_command(message):
 def get_text_messages(message):
     if message.text == "Для всех":
         if message.chat.id == 1030811973:
-            bot.send_message(message.chat.id, "Ты 2! Меня не заскамишь!",reply_markup=menu)
+            bot.send_message(message.chat.id, "Ты Алина! Меня не заскамишь!",reply_markup=menu)
         else:
             bot.send_message(message.chat.id, "Я кабанчик онлайн! Отправляй мне слово или предложение, а я переведу его на Таджицкий")
     if message.text == "Для Алины":
         if message.chat.id != 1030811973:
-            bot.send_message(message.chat.id, "Ты 1! Меня не заскамишь!",reply_markup=menu)
+            bot.send_message(message.chat.id, "Ты не Алина! Меня не заскамишь!",reply_markup=menu)
         else:
             bot.send_message(message.chat.id, "Идентификация Борна прошла успешно!")
             sleep(1)
