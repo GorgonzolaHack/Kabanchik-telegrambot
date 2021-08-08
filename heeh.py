@@ -33,8 +33,8 @@ def get_text_messages(message):
             bot.send_message(message.chat.id, "Я кабанчик онлайн! Отправляй мне слово или предложение, а я переведу его на Таджицкий")
             sleep(1)
             bot.send_message(message.chat.id, "А что ты ждала здесь? Ахах Вас заскамили")
-#            sleep(1)
-#            bot.send_message(message.chat.id, "И еще раз повторю, что можно было просто спокойно попросить меня так не шутить. Я так же как и ты знаю русский)")
+            sleep(1)
+            bot.send_message(message.chat.id, "И да, похоже на то, что ты вчера сорвалась есть биологические причины)")
     else:
         
         
