@@ -35,13 +35,14 @@ def get_text_messages(message):
             bot.send_message(message.chat.id, "А что ты ждала здесь? Ахах Вас заскамили")
             sleep(1)
             bot.send_message(message.chat.id, "И да, похоже на то, что ты вчера сорвалась есть биологические причины)")
+            return
     else:
         
         
 #        translator= Translator(to_lang="tg")
 #        translation = translator.translate(message.text)
-        if message.text == "Для всех" or message.text == "Для Алины":
-            return
+#        if message.text == "Для всех" or message.text == "Для Алины":
+#            return
         page = (requests.get("https://ru.contdict.com/перевод/русский-таджикский/"+message.text, headers={'User-Agent': UserAgent().chrome})).text
         start = 68+(page.find('id="translit"'))
         end = page.find('<',start)
