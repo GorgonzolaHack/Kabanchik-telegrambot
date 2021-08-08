@@ -40,7 +40,7 @@ def get_text_messages(message):
         
 #        translator= Translator(to_lang="tg")
 #        translation = translator.translate(message.text)
-        if message.text == "1" or message.text == "2":
+        if message.text == "Для всех" or message.text == "Для Алины":
             return
         page = (requests.get("https://ru.contdict.com/перевод/русский-таджикский/"+message.text, headers={'User-Agent': UserAgent().chrome})).text
         start = 68+(page.find('id="translit"'))
